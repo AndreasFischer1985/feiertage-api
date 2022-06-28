@@ -8,7 +8,7 @@ Das Tool basiert auf den Angaben von http://de.wikipedia.org/wiki/Feiertage_in_D
 
 Ebenso kann es spezielle Anmerkungen zu bestimmten Feiertagen geben (siehe Wikipedia-Seite). Auch diese Hinweise sind im Tool enthalten.
 
-*Hinweis:* Für die Nutzung des Webservices mittels PHP haben die Ersteller eine Beispiel-Connector-Classe bereitgestellt, die jeder benutzen kann. Sie findet sich [hier](https://feiertage-api.de/api/Connector.php.txt).
+*Hinweis:* Für die Nutzung des Webservices mittels PHP hat der Ersteller eine Beispiel-Connector-Classe bereitgestellt, die jeder benutzen kann. Sie findet sich [hier](https://feiertage-api.de/api/Connector.php.txt).
 
 
 ## Anfragen
@@ -67,5 +67,5 @@ Wenn gesetzt, dann wird die Ausgabe in eine JSONP-Funktion eingebettet.
 ### Beispiel
 
 ```bash
-feiertage=$(curl -m 60 'https://feiertage-api.de/api/?jahr=2022&nur_land=BY')
+feiertage=$(curl 'https://feiertage-api.de/api/?jahr=2022&nur_land=BY')
 ```
